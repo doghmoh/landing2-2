@@ -229,7 +229,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url(Artboard-3.png);
+    background-image: url(rotate.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -396,7 +396,7 @@ a {
 #section7 {
     width: 100%;
     height: 100vh;
-    background-image: url(Artboard-4.png);
+    background-image: url(Artboard-2.png);
     margin: 100px auto 0 auto;
     background-position: bottom;
     background-repeat: no-repeat;
@@ -691,9 +691,14 @@ footer {
         transform: translateX(0%) !important;
     }
 
-    section, .section1-overlay, .container,.container2, .sidebar{
+    section,
+    .section1-overlay,
+    .container,
+    .container2,
+    .sidebar {
         height: auto !important;
     }
+
     #section5,
     #section6,
     #section7 {
@@ -924,29 +929,32 @@ footer {
         font-size: 16px !important;
     }
 
- 
+
 
     .section-title h1 {
         font-size: 32px;
     }
-    section{
+
+    section {
         height: auto !important;
     }
+
     #section5,
     #section6,
     #section7 {
-        background-position: center;
+        background-position: inherit;
         background-repeat: no-repeat;
         background-clip: border-box;
-        background-size: 100% 100%;
+        background-size: contain;
         height: auto !important;
         margin: 50px 0;
     }
 
     #section7 {
-
+        background-image: url(Artboard-2.png) !important;
         height: auto !important;
         margin: 100px auto 100px auto;
+        background-position: bottom !important; 
     }
 
     footer {
@@ -954,31 +962,43 @@ footer {
         background-position: right !important;
     }
 
-    .row1{
+    .row1 {
         flex-direction: row;
     }
-    .row1 .question{
+
+    .row1 .question {
         direction: ltr !important;
     }
-    .row1 .question ul{
+
+    .row1 .question ul {
         line-height: 44px !important;
-        
+
     }
 }
 
 
 /* For medium screens (tablets) */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    section, .section1-overlay, .container,.container2, .sidebar{
+
+    section,
+    .section1-overlay,
+    .container,
+    .container2,
+    .sidebar {
         height: auto !important;
 
     }
-    section{
+
+    section {
         margin: 100px auto !important;
     }
-    #section1, #section2{
+
+    #section1,
+    #section2,
+    footer {
         margin: 0 !important;
     }
+
     #section3 {
         margin: 30px auto !important;
     }
@@ -1047,6 +1067,7 @@ footer {
         padding: 40px;
         margin: 61px -3px;
     }
+
     #section5,
     #section6,
     #section7 {
@@ -1055,7 +1076,8 @@ footer {
         background-clip: border-box;
         background-size: contain;
     }
-    .sidebar{
+
+    .sidebar {
         height: auto !important;
     }
 }
