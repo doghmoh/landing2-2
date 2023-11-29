@@ -1,0 +1,1049 @@
+* {
+    font-family: 'Poppins';
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    width: 100%;
+    font-size: 0.89vw;
+}
+
+header {
+    background-color: #4c4b4b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+
+header .logo {
+    width: 20%;
+}
+
+nav {
+    width: 30%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 12px;
+}
+
+li {
+    text-decoration: none;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.bars {
+    display: none;
+}
+
+.sidebar {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 99;
+    display: none;
+    width: 100%;
+    height: auto;
+    background-color: #4c4b4b;
+    opacity: 0.8;
+}
+
+.sidebar ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid white;
+    width: 100%;
+    margin: 30px 0;
+}
+
+.sidebar ul li a {
+    font-size: 22px;
+    padding: 15px 0;
+    font-weight: 600;
+}
+
+.sidebar ul li:hover {
+    background-color: #000;
+}
+
+.sidebar ul li a:hover {
+    color: #ff0000;
+}
+
+#section1 {
+    height: 90vh;
+    width: 100%;
+    background: url("modern-business-building-scenery-touching-sky.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    filter: grayscale(100%);
+    filter: drop-shadow(100%);
+
+}
+
+.section1-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#section1 p {
+    width: 70%;
+    margin: 30px auto;
+    color: #fff;
+    font-size: 19px;
+    line-height: 40px;
+}
+
+#section2 {
+    width: 100%;
+    height: auto;
+}
+
+.articles {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.articles article {
+    width: 33%;
+    text-align: center;
+    padding: 50px;
+    font-size: 19px;
+}
+
+.articles article h1 {
+    font-size: 28px;
+}
+
+#section3 {
+    position: relative;
+    width: 100%;
+    height: 33vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#section4 {
+    position: relative;
+    width: 100%;
+    height: 44vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 90%;
+    height: 19vh;
+    background: url(sect2.png);
+    background-position: right;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: flex-start;
+    justify-content: center;
+    margin: 50px 0;
+    padding-left: 75px;
+}
+
+.rect-text {
+    color: #fff;
+    height: auto;
+}
+
+
+.container2 {
+    height: 44vh;
+    width: 100%;
+    background: url(section3.png);
+    background-position: left;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    align-items: center;
+    justify-content: center;
+}
+
+.rect-text2 {
+    color: #fff;
+    padding: 0;
+    height: auto;
+    margin-left: 100px;
+}
+
+.mission-text {
+    line-height: 32px;
+    width: 95%;
+}
+
+#section5 {
+    width: 100%;
+    height: 104vh;
+    margin: 100px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(Artboard-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#section6 {
+    width: 100%;
+    height: auto;
+    margin: 100px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(Artboard-3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-title {
+    text-align: center;
+    padding: 20px 0 50px 0;
+    font-size: 43px;
+}
+
+
+/* Customize the dots */
+.slick-dots {
+    position: absolute;
+    bottom: -50px;
+    /* Adjust position */
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+/* Individual dot style */
+.slick-dots li button {
+    font-size: 10px;
+    /* Adjust the dot size */
+    width: 15px;
+    /* Adjust the dot width */
+    height: 15px;
+    /* Adjust the dot height */
+    border-radius: 50%;
+    /* Make dots circular */
+    background-color: #fff;
+    /* Change dot color */
+    opacity: 0.5;
+
+    border: 2px solid #fb5303;
+
+    /* Adjust dot opacity */
+    margin: 0 10px;
+}
+
+/* Active dot style */
+.slick-dots li.slick-active button {
+    background-color: #ff0000;
+    /* Change active dot color */
+    opacity: 1;
+    /* Adjust active dot opacity */
+}
+
+.slick-dots li button::before {
+    content: "";
+}
+
+
+.tm-testimonials-carousel {
+    display: flex;
+    width: 100%;
+
+}
+
+/* Style the card container */
+.card {
+    width: 20%;
+    margin: 0 70px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 10px 10px 10px gray;
+}
+
+/* Style the image within the card */
+.card img {
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+}
+
+/* Style the content within the card */
+.card-content {
+    padding: 40px;
+}
+
+/* Style the title */
+.card-content h2 {
+    margin-top: 0;
+    font-size: 16px;
+}
+
+/* Style the text */
+.card-content p {
+    margin-top: 5px;
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+/* Style the button */
+.card-content button {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 13px;
+    display: block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #fb5303;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.slick-wrapper {
+    width: 80% !important;
+    margin: 0 auto;
+
+}
+
+.slide-item {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    width: 100% !important;
+    height: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    /* Add padding to the slides */
+    text-align: center;
+    /* Background color */
+    border-radius: 5px;
+    /* Rounded corners */
+
+}
+
+
+
+.inside-item {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    box-shadow: 4px 9px 10px gray;
+}
+
+
+.slide-item img {
+    width: 333px;
+    height: 161px;
+    margin-left: -31px;
+}
+
+.slide-item p {
+    font-size: 14px;
+    margin-left: 19px;
+    text-align: left;
+}
+
+.slide-item p a {
+    color: black;
+    font-weight: bold;
+}
+
+#section7 {
+    width: 100%;
+    height: 100vh;
+    background-image: url(Artboard-4.png);
+    margin: 100px auto 0 auto;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.who-card {
+    width: 20%;
+    height: 500px;
+    margin: 0 70px;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.inside-who {
+    width: 100%;
+    height: 80%;
+    background-color: #fb5303;
+    box-shadow: 3px 5px 15px;
+}
+
+/* Style the image within the card */
+.who-card img {
+    width: 75%;
+    height: 60%;
+    margin: -40px auto;
+    display: block;
+}
+
+/* Style the content within the card */
+.who-content {
+    padding: 40px;
+    margin: 50px 30px;
+    color: white;
+}
+
+/* Style the title */
+.who-content h2 {
+    margin-top: 0;
+    font-size: 2.5em;
+}
+
+/* Style the text */
+.who-content p {
+    margin-top: 5px;
+    font-size: 1.4em;
+    padding: 10px 0;
+}
+
+
+
+
+footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    background-image: url(Artboard-5.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+}
+
+.footer-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    padding: 50px;
+}
+
+.row1 {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.row1 h3 {
+    color: #fb5303 !important;
+}
+
+.row1 p {
+    color: #fff;
+    font-size: 12px;
+}
+
+.row1 li a {
+    font-size: 12px;
+}
+
+.row1 li a:hover {
+    color: #fb5303;
+}
+
+.row1 div {
+    width: 45%;
+}
+
+.row1:last-child {
+    direction: rtl;
+}
+
+.row3,
+.row4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.footer-water {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.line {
+    height: 5px;
+    width: 95%;
+    margin: 0 auto;
+    border-top: 1px solid #fb5303;
+}
+
+.fa-brands,
+.fab {
+    font-size: 18px !important;
+    border: 1px solid #fb5303;
+    border-radius: 50%;
+    background-color: transparent;
+    color: #fb5303;
+    padding: 10px;
+    margin: 5px 8px;
+}
+
+/* animation  */
+
+
+.toleft {
+    opacity: 0;
+    width: 0%;
+    transition: opacity 1s ease, width 1s ease, transform 1s ease;
+    transform: translateX(0%) !important;
+}
+
+.toleft.fade-in {
+    opacity: 1;
+    width: 100%;
+    /* Adjust this value as needed */
+    transform: translateX(0%) !important;
+}
+
+
+
+.toright {
+    opacity: 0;
+    width: 0%;
+    transition: opacity 1s ease, width 1s ease, transform 1s ease;
+    transform: translateX(100%);
+}
+
+.toright.fade-in {
+    opacity: 1;
+    width: 90%;
+    transform: translateX(0%);
+}
+
+.who-card {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.who-card.fade-in {
+    opacity: 1;
+}
+
+
+.slide-item {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slide-item.fade-in {
+    opacity: 1;
+}
+
+.articles article {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.articles article.fade-in {
+    opacity: 1;
+}
+
+@media only screen and (max-width: 330px) {
+
+    h1 {
+        font-size: 20px !important;
+    }
+
+    p {
+        font-size: x-small !important;
+    }
+
+    #section1 p {
+        width: 85% !important;
+        font-size: 12px !important;
+        line-height: 40px;
+        word-break: break-word !important;
+    }
+
+    .rect-text2 h1,
+    .rect-text h1 {
+        font-size: 3em;
+    }
+
+    .rect-text2 p,
+    .rect-text p {
+        font-size: 2.3em;
+    }
+
+    .toleft.fade-in {
+        width: 100%;
+        height: 72%;
+    }
+
+    #section3 .container {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    #section4 {
+        height: 50vh !important;
+    }
+
+
+    #section4 .container2 {
+        height: 100% !important;
+        width: 120% !important;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-clip: border-box;
+        background-size: 100% 100%;
+    }
+
+    .rect-text2 {
+        padding: 53px 10px 52px 28px !important;
+        height: auto;
+        margin-left: 20px !important;
+    }
+
+    .mission-text {
+        line-height: 14px !important;
+        font-size: 12px !important;
+        width: 100% !important;
+    }
+
+    .container {
+        padding: 0 !important;
+    }
+
+    .who-content h2 {
+        margin-top: 0;
+        font-size: 16px !important;
+    }
+
+    /* Style the text */
+    .who-content p {
+        font-size: 16px !important;
+    }
+
+    .row1 h3 {
+        color: #fb5303 !important;
+        font-size: initial;
+        line-height: 39px;
+    }
+
+    #section5 {
+        height: auto;
+    }
+
+    .toright {
+        transform: translateX(0%) !important;
+    }
+
+    section, .section1-overlay, .container,.container2, .sidebar{
+        height: auto !important;
+    }
+    #section5,
+    #section6,
+    #section7 {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-clip: border-box;
+        background-size: 100% 100%;
+    }
+
+    footer {
+        background-image: url(footer-sm.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-clip: border-box;
+        background-size: 100% 100%;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+    .toright {
+        transform: translateX(0%) !important;
+    }
+
+    .card-content button {
+        font-size: 13px;
+    }
+
+    html,
+    body {
+        font-size: 1.2vw !important;
+    }
+
+    header .logo img {
+        width: 311px;
+        height: 57px;
+        margin-left: -76px;
+    }
+
+    nav {
+        width: 59%;
+        font-size: 11px;
+        margin-top: 11px;
+    }
+
+    #section1 {
+        height: auto;
+    }
+
+    .section1-overlay {
+        height: auto;
+        padding: 50px 0;
+    }
+
+    .section1-overlay img {
+        width: 100%;
+    }
+
+    #section1 {
+        font-size: 16px;
+        word-break: break-word;
+        height: auto;
+    }
+
+    #section2 {
+        height: auto;
+    }
+
+    .articles {
+        flex-direction: column;
+    }
+
+    .articles article {
+        width: 100%;
+    }
+
+    #section3 {
+        height: 35vh;
+    }
+
+    #section3 .container {
+        padding-left: 0;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-clip: border-box;
+        background-size: 100% 100%;
+    }
+
+    /* .rect-text {
+        font-size: 14px;
+        padding: 0 33px;
+    } */
+
+    .toleft.fade-in {
+        width: 100%;
+        height: 72%;
+    }
+
+    #section4 {
+        height: 50vh;
+    }
+
+
+    #section4 .container2 {
+        height: 100%;
+        width: 99% !important;
+
+        background-position: center;
+        background-repeat: no-repeat;
+        background-clip: border-box;
+        background-size: 100% 100%;
+    }
+
+    .rect-text {
+        margin-left: 36px;
+    }
+
+    .rect-text2 {
+        margin-left: 96px;
+    }
+
+    .rect-text2 h1,
+    .rect-text h1 {
+        font-size: 3em;
+    }
+
+    .rect-text2 p,
+    .rect-text p {
+        font-size: 2.3em;
+    }
+
+    .toright.fade-in {
+        width: 100%;
+    }
+
+    .mission-text {
+        line-height: 17px;
+        font-size: 14px;
+    }
+
+    #section5 {
+        height: auto;
+    }
+
+    .card-content {
+        padding: 9%;
+        word-break: break-word;
+    }
+
+    .slide-item img {
+        width: 135px;
+        height: 133px;
+        margin-left: -22px;
+    }
+
+    .inside-item {
+        width: 100%;
+        height: 100%;
+    }
+
+    .slide-item {
+        width: 105% !important;
+    }
+
+    .slide-item p {
+        font-size: 11px;
+        margin-left: 7px;
+    }
+
+    .card-content h2 {
+        margin-top: 0;
+        font-size: 16px;
+    }
+
+    /* Style the text */
+    .card-content p {
+        margin-top: 5px;
+        font-size: 2em;
+        padding: 10px 0;
+    }
+
+    .who-content {
+        margin: 55px 0;
+        font-size: 12px !important;
+    }
+
+    .row1 {
+        flex-direction: column;
+    }
+
+    .row1 div {
+        width: 100%;
+    }
+
+    .bars {
+        display: block;
+        margin: 10px 15px;
+        color: white;
+    }
+
+    .bars i {
+        font-size: 32px !important;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .sidebar ul {
+        padding: 0;
+    }
+
+    .sidebar {
+        height: 100vh;
+        top: 55px;
+    }
+
+    footer {
+        font-size: 13px;
+    }
+
+    .row1 div ul {
+        padding: 0 !important;
+        align-items: end !important;
+    }
+
+    .row1 h3 {
+        font-size: 16px !important;
+    }
+
+ 
+
+    .section-title h1 {
+        font-size: 32px;
+    }
+    section{
+        height: auto !important;
+    }
+    #section5,
+    #section6,
+    #section7 {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-clip: border-box;
+        background-size: 100% 100%;
+        height: auto !important;
+        margin: 50px 0;
+    }
+
+    #section7 {
+
+        height: auto !important;
+        margin: 100px auto 100px auto;
+    }
+
+    footer {
+        background-image: url(footer-sm.png);
+        background-position: right !important;
+    }
+
+    .row1{
+        flex-direction: row;
+    }
+    .row1 .question{
+        direction: ltr !important;
+    }
+    .row1 .question ul{
+        line-height: 44px !important;
+        
+    }
+}
+
+
+/* For medium screens (tablets) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    header .logo img {
+        width: 311px;
+        height: 57px;
+        margin-left: -76px;
+    }
+
+    nav {
+        width: 59%;
+        font-size: 11px;
+        margin-top: 11px;
+    }
+
+    #section1 {
+        height: auto;
+    }
+
+    .section1-overlay {
+        height: auto;
+        padding: 50px 0;
+    }
+
+    .section1-overlay img {
+        width: 100%;
+    }
+
+    .articles {
+        flex-direction: column;
+    }
+
+    .articles article {
+        width: 100%;
+    }
+
+    .rect-text {
+        font-size: 14px;
+    }
+
+    #section4 {
+        height: 33vh;
+    }
+
+    .main-container {
+        padding: 0;
+    }
+
+    #section4 .container2 {
+        height: 357px;
+    }
+
+    .rect-text2 {
+        margin-left: 85px;
+    }
+
+
+    .mission-text {
+        line-height: 19px;
+        font-size: 14px;
+    }
+
+    .who-content {
+        padding: 40px;
+        margin: 61px -3px;
+    }
+    #section5,
+    #section6,
+    #section7 {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-clip: border-box;
+        background-size: contain;
+    }
+}
+
+
+/* For larger screens (desktops and laptops) */
+@media only screen and (min-width: 1024px) {
+    /* CSS rules for larger screens */
+}
