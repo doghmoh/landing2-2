@@ -1055,6 +1055,9 @@ footer {
         background-clip: border-box;
         background-size: contain;
     }
+    .sidebar{
+        height: auto !important;
+    }
 }
 
 
